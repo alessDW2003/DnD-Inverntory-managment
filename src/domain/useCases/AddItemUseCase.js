@@ -4,7 +4,7 @@ export default class getAllItemsByUserIdUseCase {
   }
 
   async execute(item) {
-    const items = await this.repository.addItem(userId);
+    const items = await this.repository.addItem(item);
 
     return items;
   }

@@ -18,10 +18,14 @@ const ClientHelper = {
 
     const options = {
       method,
+      headers: {
+        "Content-Type": "application/json",
+      },
     };
 
     if (["POST", "PATCH", "PUT"].includes(method) && dataObject) {
       options.body = JSON.stringify(dataObject);
+      console.log("options body", options.body);
     }
 
     try {

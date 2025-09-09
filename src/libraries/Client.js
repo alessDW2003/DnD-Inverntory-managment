@@ -1,6 +1,5 @@
 const ClientHelper = {
   getFullURI(relativePath, id = null) {
-    const config = window.appConfig;
     const baseUrl = import.meta.env.VITE_BASE_URL;
     if (relativePath.indexOf("/") !== 0) {
       relativePath = "/" + relativePath;

@@ -12,7 +12,8 @@ import InputText from "primevue/inputtext";
 import Select from "primevue/select";
 import Textarea from "primevue/textarea";
 import Inputnumber from "primevue/inputnumber";
-
+import InputIcon from "primevue/inputicon";
+import IconField from "primevue/iconfield";
 import "./assets/main.css";
 
 const app = createApp(App).use(router);
@@ -25,8 +26,11 @@ app.component("p-datatable", DataTable);
 app.component("p-column", Column);
 app.component("p-button", Button);
 app.component("p-dialog", Dialog);
-app.component("p-inputtext", InputText);
+app.component("p-inputText", InputText);
 app.component("p-select", Select);
 app.component("p-textarea", Textarea);
 app.component("p-inputnumber", Inputnumber);
+app.component("p-inputIcon", InputIcon);
+app.component("p-iconField", IconField);
+
 app.mount("#app");
